@@ -1,0 +1,15 @@
+include ':JsonLibrary'
+project(':JsonLibrary').projectDir=new File('SharedLibrary/JsonLibrary')
+
+include ':MysqlLibrary'
+project(':MysqlLibrary').projectDir=new File('SharedLibrary/MysqlLibrary')
+
+include ':CoreLibrary'
+project(':CoreLibrary').projectDir=new File('SharedLibrary/CoreLibrary')
+
+include ':GameService'
+project(':GameService').projectDir=new File('GameService')
+
+include ':GameLibrary'
+project(':GameLibrary').projectDir=new File('GameLibrary')
+
