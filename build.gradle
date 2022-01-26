@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+allprojects {
+    apply plugin: 'java'
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    test {
+        reports {
+            junitXml.enabled = false
+            html.enabled = true
+        }
+        ignoreFailures = Boolean.getBoolean("test.ignoreFailures")
+        setSystemProperties(getJavaProperties())
+    }
+}
+
+def getJavaProperties() {
+
+    Map<String, Object> map = new HashMap<String, Object>();
+
+    File file = project.rootProject.file('local.properties')
+    if (file.exists()) {
+        Properties properties = new Properties()
+        properties.load(file.newDataInputStream())
+
+        for (String name : properties.stringPropertyNames()) {
+            map.put(name, properties.getProperty(name));
+        }
+    }
+
+    return map
+}

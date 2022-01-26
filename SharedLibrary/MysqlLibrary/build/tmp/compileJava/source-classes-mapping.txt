@@ -1,0 +1,8 @@
+com/jameshackett/core/DatabaseManager.java
+ com.jameshackett.core.DatabaseManager
+com/jameshackett/core/annotations/MysqlTable.java
+ com.jameshackett.core.annotations.MysqlTable
+com/jameshackett/core/DataSourceFactory.java
+ com.jameshackett.core.DataSourceFactory
+com/jameshackett/core/annotations/MysqlField.java
+ com.jameshackett.core.annotations.MysqlField

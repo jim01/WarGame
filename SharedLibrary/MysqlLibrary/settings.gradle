@@ -1,0 +1,5 @@
+include ':CoreLibrary'
+project(':CoreLibrary').projectDir=new File('../CoreLibrary')
+
+include ':JsonLibrary'
+project(':JsonLibrary').projectDir=new File('../JsonLibrary')
