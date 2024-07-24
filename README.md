@@ -1,6 +1,6 @@
-_this was assesment I did for a job position_
+## this was assessment I did for a job position
 
---
+---
 
 
 # Welcome to the Game of War!
