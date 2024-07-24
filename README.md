@@ -1,3 +1,6 @@
+_this was assesment I did for a job position_
+
+
 # Welcome to the Game of War!
 
 This app will run a game of war simulation between a player and the house. It will return the cards used and the winner. The player's wins will be saved to a leaderboard where you can fetch a list of the top winners.
